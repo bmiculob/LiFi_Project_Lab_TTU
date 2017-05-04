@@ -12,3 +12,17 @@ c:\users\quandary\documents\visual studio 2015\Projects\LiFiReceiver\LiFiReceive
 c:\users\quandary\documents\visual studio 2015\Projects\LiFiReceiver\LiFiReceiver\obj\Debug\LiFiReceiver.csproj.GenerateResource.Cache
 c:\users\quandary\documents\visual studio 2015\Projects\LiFiReceiver\LiFiReceiver\obj\Debug\LiFiReceiver.exe
 c:\users\quandary\documents\visual studio 2015\Projects\LiFiReceiver\LiFiReceiver\obj\Debug\LiFiReceiver.pdb
+C:\Users\Quandary\GitHubStuff\LiFi_Project_Lab_TTU\Li-Fi Receiver GUI\LiFiReceiver\bin\Debug\LiFiReceiver.exe.config
+C:\Users\Quandary\GitHubStuff\LiFi_Project_Lab_TTU\Li-Fi Receiver GUI\LiFiReceiver\obj\Debug\LiFiReceiver.exe
+C:\Users\Quandary\GitHubStuff\LiFi_Project_Lab_TTU\Li-Fi Receiver GUI\LiFiReceiver\obj\Debug\LiFiReceiver.pdb
+C:\Users\Quandary\GitHubStuff\LiFi_Project_Lab_TTU\Li-Fi Receiver GUI\LiFiReceiver\bin\Debug\LiFiReceiver.exe
+C:\Users\Quandary\GitHubStuff\LiFi_Project_Lab_TTU\Li-Fi Receiver GUI\LiFiReceiver\bin\Debug\LiFiReceiver.pdb
+C:\Users\Quandary\GitHubStuff\LiFi_Project_Lab_TTU\Li-Fi Receiver GUI\LiFiReceiver\obj\Debug\LiFiReceiver.csprojResolveAssemblyReference.cache
+C:\Users\Quandary\GitHubStuff\LiFi_Project_Lab_TTU\Li-Fi Receiver GUI\LiFiReceiver\obj\Debug\MainWindow.g.cs
+C:\Users\Quandary\GitHubStuff\LiFi_Project_Lab_TTU\Li-Fi Receiver GUI\LiFiReceiver\obj\Debug\App.g.cs
+C:\Users\Quandary\GitHubStuff\LiFi_Project_Lab_TTU\Li-Fi Receiver GUI\LiFiReceiver\obj\Debug\LiFiReceiver_MarkupCompile.cache
+C:\Users\Quandary\GitHubStuff\LiFi_Project_Lab_TTU\Li-Fi Receiver GUI\LiFiReceiver\obj\Debug\LiFiReceiver_MarkupCompile.lref
+C:\Users\Quandary\GitHubStuff\LiFi_Project_Lab_TTU\Li-Fi Receiver GUI\LiFiReceiver\obj\Debug\MainWindow.baml
+C:\Users\Quandary\GitHubStuff\LiFi_Project_Lab_TTU\Li-Fi Receiver GUI\LiFiReceiver\obj\Debug\LiFiReceiver.g.resources
+C:\Users\Quandary\GitHubStuff\LiFi_Project_Lab_TTU\Li-Fi Receiver GUI\LiFiReceiver\obj\Debug\LiFiReceiver.Properties.Resources.resources
+C:\Users\Quandary\GitHubStuff\LiFi_Project_Lab_TTU\Li-Fi Receiver GUI\LiFiReceiver\obj\Debug\LiFiReceiver.csproj.GenerateResource.Cache

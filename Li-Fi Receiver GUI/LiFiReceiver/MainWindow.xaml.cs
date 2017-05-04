@@ -99,7 +99,7 @@ namespace LiFiReceiver
                 //receiverIn = new SerialPort(serialTextBox.Text, Int32.Parse(baudRateTextBox.Text), Parity.None, Int32.Parse(dataTextBox.Text), sb)
 
                 receiverIn.PortName = serialTextBox.Text;
-                receiverIn.ReadBufferSize = 1048576;
+                receiverIn.ReadBufferSize = 1048576; //Buffer Size
                 receiverIn.BaudRate = Int32.Parse(baudRateTextBox.Text);
                 receiverIn.Parity = Parity.None;
                 receiverIn.DataBits = Int32.Parse(dataTextBox.Text);
@@ -114,24 +114,24 @@ namespace LiFiReceiver
                 ConnectionStatus_textBlock.Text = "UART Connection is OPEN";
                 fs.Close();
             }
-
         }
 
         private void DataReceivedHandler(object sender, SerialDataReceivedEventArgs e)
         {
-            fs = new FileStream(filepath, FileMode.Append, FileAccess.Write);
-            int availBuff = receiverIn.BytesToRead;
+            //fs = new FileStream(filepath, FileMode.Append, FileAccess.Write); //Creates file stream
+            int availBuff = receiverIn.BytesToRead; //check available buffer
             byte t;
             for (int i = 0; i < availBuff; i++)
             {
                 t = (byte)receiverIn.ReadByte();
-                fs.WriteByte(t);
+                fs.WriteByte(t); //Writes char to a file
                 this.Dispatcher.Invoke(() =>
                 { 
-                    incomingData_textBox.Text = incomingData_textBox.Text + (char)t + " ";
+                    incomingData_textBox.Text = incomingData_textBox.Text + (char)t + " "; //Write to UI Text Box
                 });
             }
-            fs.Close();
+            fs.Flush(true);
+            //fs.Close(); //Closes file stream
         }
 
         private void filePathtoSave_textBox_TextChanged(object sender, TextChangedEventArgs e)

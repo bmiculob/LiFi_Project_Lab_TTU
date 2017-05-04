@@ -12,3 +12,6 @@ c:\users\quandary\documents\visual studio 2015\Projects\LiFiTransmitApp\LiFiTran
 c:\users\quandary\documents\visual studio 2015\Projects\LiFiTransmitApp\LiFiTransmitApp\obj\Debug\LiFiTransmitApp.csproj.GenerateResource.Cache
 c:\users\quandary\documents\visual studio 2015\Projects\LiFiTransmitApp\LiFiTransmitApp\obj\Debug\LiFiTransmitApp.exe
 c:\users\quandary\documents\visual studio 2015\Projects\LiFiTransmitApp\LiFiTransmitApp\obj\Debug\LiFiTransmitApp.pdb
+C:\Users\Quandary\GitHubStuff\LiFi_Project_Lab_TTU\Li-Fi Transmitter GUI\LiFiTransmitApp\bin\Debug\LiFiTransmitApp.exe.config
+C:\Users\Quandary\GitHubStuff\LiFi_Project_Lab_TTU\Li-Fi Transmitter GUI\LiFiTransmitApp\obj\Debug\LiFiTransmitApp.exe
+C:\Users\Quandary\GitHubStuff\LiFi_Project_Lab_TTU\Li-Fi Transmitter GUI\LiFiTransmitApp\obj\Debug\LiFiTransmitApp.pdb
