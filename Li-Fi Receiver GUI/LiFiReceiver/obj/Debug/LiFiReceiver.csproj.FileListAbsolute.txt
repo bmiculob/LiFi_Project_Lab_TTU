@@ -1,0 +1,14 @@
+c:\users\quandary\documents\visual studio 2015\Projects\LiFiReceiver\LiFiReceiver\bin\Debug\LiFiReceiver.exe.config
+c:\users\quandary\documents\visual studio 2015\Projects\LiFiReceiver\LiFiReceiver\obj\Debug\LiFiReceiver.csprojResolveAssemblyReference.cache
+c:\users\quandary\documents\visual studio 2015\Projects\LiFiReceiver\LiFiReceiver\obj\Debug\MainWindow.g.cs
+c:\users\quandary\documents\visual studio 2015\Projects\LiFiReceiver\LiFiReceiver\obj\Debug\App.g.cs
+c:\users\quandary\documents\visual studio 2015\Projects\LiFiReceiver\LiFiReceiver\obj\Debug\LiFiReceiver_MarkupCompile.cache
+c:\users\quandary\documents\visual studio 2015\Projects\LiFiReceiver\LiFiReceiver\obj\Debug\LiFiReceiver_MarkupCompile.lref
+c:\users\quandary\documents\visual studio 2015\Projects\LiFiReceiver\LiFiReceiver\bin\Debug\LiFiReceiver.exe
+c:\users\quandary\documents\visual studio 2015\Projects\LiFiReceiver\LiFiReceiver\bin\Debug\LiFiReceiver.pdb
+c:\users\quandary\documents\visual studio 2015\Projects\LiFiReceiver\LiFiReceiver\obj\Debug\MainWindow.baml
+c:\users\quandary\documents\visual studio 2015\Projects\LiFiReceiver\LiFiReceiver\obj\Debug\LiFiReceiver.g.resources
+c:\users\quandary\documents\visual studio 2015\Projects\LiFiReceiver\LiFiReceiver\obj\Debug\LiFiReceiver.Properties.Resources.resources
+c:\users\quandary\documents\visual studio 2015\Projects\LiFiReceiver\LiFiReceiver\obj\Debug\LiFiReceiver.csproj.GenerateResource.Cache
+c:\users\quandary\documents\visual studio 2015\Projects\LiFiReceiver\LiFiReceiver\obj\Debug\LiFiReceiver.exe
+c:\users\quandary\documents\visual studio 2015\Projects\LiFiReceiver\LiFiReceiver\obj\Debug\LiFiReceiver.pdb

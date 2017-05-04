@@ -1,0 +1,14 @@
+c:\users\quandary\documents\visual studio 2015\Projects\LiFiTransmitApp\LiFiTransmitApp\bin\Debug\LiFiTransmitApp.exe.config
+c:\users\quandary\documents\visual studio 2015\Projects\LiFiTransmitApp\LiFiTransmitApp\bin\Debug\LiFiTransmitApp.exe
+c:\users\quandary\documents\visual studio 2015\Projects\LiFiTransmitApp\LiFiTransmitApp\bin\Debug\LiFiTransmitApp.pdb
+c:\users\quandary\documents\visual studio 2015\Projects\LiFiTransmitApp\LiFiTransmitApp\obj\Debug\LiFiTransmitApp.csprojResolveAssemblyReference.cache
+c:\users\quandary\documents\visual studio 2015\Projects\LiFiTransmitApp\LiFiTransmitApp\obj\Debug\MainWindow.g.cs
+c:\users\quandary\documents\visual studio 2015\Projects\LiFiTransmitApp\LiFiTransmitApp\obj\Debug\App.g.cs
+c:\users\quandary\documents\visual studio 2015\Projects\LiFiTransmitApp\LiFiTransmitApp\obj\Debug\LiFiTransmitApp_MarkupCompile.cache
+c:\users\quandary\documents\visual studio 2015\Projects\LiFiTransmitApp\LiFiTransmitApp\obj\Debug\LiFiTransmitApp_MarkupCompile.lref
+c:\users\quandary\documents\visual studio 2015\Projects\LiFiTransmitApp\LiFiTransmitApp\obj\Debug\MainWindow.baml
+c:\users\quandary\documents\visual studio 2015\Projects\LiFiTransmitApp\LiFiTransmitApp\obj\Debug\LiFiTransmitApp.g.resources
+c:\users\quandary\documents\visual studio 2015\Projects\LiFiTransmitApp\LiFiTransmitApp\obj\Debug\LiFiTransmitApp.Properties.Resources.resources
+c:\users\quandary\documents\visual studio 2015\Projects\LiFiTransmitApp\LiFiTransmitApp\obj\Debug\LiFiTransmitApp.csproj.GenerateResource.Cache
+c:\users\quandary\documents\visual studio 2015\Projects\LiFiTransmitApp\LiFiTransmitApp\obj\Debug\LiFiTransmitApp.exe
+c:\users\quandary\documents\visual studio 2015\Projects\LiFiTransmitApp\LiFiTransmitApp\obj\Debug\LiFiTransmitApp.pdb
