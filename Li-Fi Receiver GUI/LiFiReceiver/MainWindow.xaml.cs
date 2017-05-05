@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Timers;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Forms;
@@ -25,11 +26,20 @@ namespace LiFiReceiver
     {
         private SerialPort receiverIn = new SerialPort();
         private string filepath = "";
+        private string bufferedOutput = "";
         private FileStream fs;
+        private System.Timers.Timer receiveTimer;
+        private Boolean Status = false;
+        private byte formatType = 0;
 
         public MainWindow()
         {
             InitializeComponent();
+            receiveTimer = new System.Timers.Timer(1000);
+            receiveTimer.AutoReset = true;
+            receiveTimer.Enabled = true;
+            receiveTimer.Elapsed += OnTimedEvent;
+
         }
 
         private void browseButton_Click(object sender, RoutedEventArgs e)
@@ -112,7 +122,7 @@ namespace LiFiReceiver
 
                 receiverIn.Open();
                 ConnectionStatus_textBlock.Text = "UART Connection is OPEN";
-                fs.Close();
+                //fs.Close();
             }
         }
 
@@ -125,10 +135,27 @@ namespace LiFiReceiver
             {
                 t = (byte)receiverIn.ReadByte();
                 fs.WriteByte(t); //Writes char to a file
-                this.Dispatcher.Invoke(() =>
-                { 
-                    incomingData_textBox.Text = incomingData_textBox.Text + (char)t + " "; //Write to UI Text Box
-                });
+
+                switch (formatType)
+                {
+                    case 0:
+                        bufferedOutput += (char)t;
+                        break;
+                    case 1:
+                        bufferedOutput += String.Format(" {0,-3} ", t.ToString());
+                        break;
+                    case 2:
+                        bufferedOutput += String.Format("0x{0,2} ", t.ToString("X2"));
+                        break;
+                    default:
+                        bufferedOutput += (char)t;
+                        break;
+                }
+
+                if (!Status)
+                {
+                    Status = true;
+                }
             }
             fs.Flush(true);
             //fs.Close(); //Closes file stream
@@ -137,6 +164,55 @@ namespace LiFiReceiver
         private void filePathtoSave_textBox_TextChanged(object sender, TextChangedEventArgs e)
         {
             filepath = filePathtoSave_textBox.Text;
+        }
+
+        private void OnTimedEvent(Object source, System.Timers.ElapsedEventArgs e)
+        {
+            if (Status)
+            {
+                this.Dispatcher.Invoke(() =>
+                {
+                    statusIndicator.Fill = new SolidColorBrush(System.Windows.Media.Colors.Lime);
+                    incomingData_textBox.Text += bufferedOutput;
+                });
+                bufferedOutput = "";
+                Status = false;
+            }
+            else
+            {
+                this.Dispatcher.Invoke(() =>
+                {
+                    statusIndicator.Fill = new SolidColorBrush(System.Windows.Media.Colors.Gray);
+                });
+            }
+        }
+
+        private void clearConsole_Button_Click(object sender, RoutedEventArgs e)
+        {
+            incomingData_textBox.Text = "";
+        }
+
+        private void toggleOutputDataFormat_Button_Click(object sender, RoutedEventArgs e)
+        {
+            switch (formatType)
+            {
+                case 0:
+                    formatType = 1;
+                    outputFormat_textBlock.Text = "Output data will be displayed in DECIMAL";
+                    break;
+                case 1:
+                    formatType = 2;
+                    outputFormat_textBlock.Text = "Output data will be displayed in HEX";
+                    break;
+                case 2:
+                    formatType = 0;
+                    outputFormat_textBlock.Text = "Output data will be displayed in ASCII";
+                    break;
+                default:
+                    formatType = 0;
+                    outputFormat_textBlock.Text = "Output data will be displayed in ASCII";
+                    break;
+            }
         }
     }
 }

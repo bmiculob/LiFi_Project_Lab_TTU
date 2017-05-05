@@ -7,21 +7,26 @@
         mc:Ignorable="d"
         Title="LiFi Receiver" Height="350" Width="525">
     <Grid>
-        <TextBox x:Name="filePathtoSave_textBox" HorizontalAlignment="Left" Height="19" Margin="34,96,0,0" TextWrapping="Wrap" Text="File Path" VerticalAlignment="Top" Width="275" RenderTransformOrigin="0.5,0.5" TextChanged="filePathtoSave_textBox_TextChanged"/>
-        <Button x:Name="browseButton" Content="Browse..." HorizontalAlignment="Left" Margin="327,95,0,0" VerticalAlignment="Top" Width="75" Click="browseButton_Click"/>
-        <TextBlock x:Name="FilePathtoSave_textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="File Path to Save" VerticalAlignment="Top" Margin="34,75,0,0"/>
-        <Button x:Name="SerialPort_Button" Content="Toggle UART Connection" HorizontalAlignment="Left" Margin="327,51,0,0" VerticalAlignment="Top" Width="150" Click="SerialPort_Button_Click"/>
-        <TextBlock x:Name="ConnectionStatus_textBlock" HorizontalAlignment="Left" Margin="327,30,0,0" TextWrapping="Wrap" Text="UART Connection is CLOSED" VerticalAlignment="Top"/>
-        <TextBox x:Name="serialTextBox" HorizontalAlignment="Left" Height="19" Margin="34,51,0,0" TextWrapping="Wrap" Text="COM1" VerticalAlignment="Top" Width="54" RenderTransformOrigin="0.515,1.531"/>
-        <TextBlock x:Name="serialPortTextBlock" HorizontalAlignment="Left" Margin="34,30,0,0" TextWrapping="Wrap" Text="Serial Port" VerticalAlignment="Top"/>
-        <TextBlock x:Name="baudRateTextBlock" HorizontalAlignment="Left" Margin="106,30,0,0" TextWrapping="Wrap" Text="Baud Rate" VerticalAlignment="Top" Width="70"/>
-        <TextBox x:Name="baudRateTextBox" HorizontalAlignment="Left" Height="19" Margin="106,51,0,0" TextWrapping="Wrap" Text="9600" VerticalAlignment="Top" Width="80" KeyDown="baudRateTextBox_KeyPress"/>
-        <TextBlock x:Name="dataTextBlock" HorizontalAlignment="Left" Margin="200,30,0,0" TextWrapping="Wrap" Text="Data Bits" VerticalAlignment="Top"/>
-        <TextBox x:Name="dataTextBox" HorizontalAlignment="Left" Height="19" Margin="200,51,0,0" TextWrapping="Wrap" Text="8" VerticalAlignment="Top" Width="47" RenderTransformOrigin="0.5,0.5" KeyDown="dataTextBox_KeyPress"/>
-        <TextBlock x:Name="stopBitsTextBlock" HorizontalAlignment="Left" Margin="265,30,0,0" TextWrapping="Wrap" Text="Stop Bits" VerticalAlignment="Top"/>
-        <TextBox x:Name="stopBitsTextBox" HorizontalAlignment="Left" Height="19" Margin="265,51,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="46" KeyDown="stopBitsTextBox_KeyPress"/>
+        <TextBox x:Name="filePathtoSave_textBox" HorizontalAlignment="Left" Height="19" Margin="34,80,0,0" TextWrapping="Wrap" Text="File Path" VerticalAlignment="Top" Width="275" RenderTransformOrigin="0.5,0.5" TextChanged="filePathtoSave_textBox_TextChanged"/>
+        <Button x:Name="browseButton" Content="Browse..." HorizontalAlignment="Left" Margin="327,79,0,0" VerticalAlignment="Top" Width="75" Click="browseButton_Click"/>
+        <TextBlock x:Name="FilePathtoSave_textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="File Path to Save" VerticalAlignment="Top" Margin="34,59,0,0"/>
+        <Button x:Name="SerialPort_Button" Content="Toggle UART Connection" HorizontalAlignment="Left" Margin="327,35,0,0" VerticalAlignment="Top" Width="150" Click="SerialPort_Button_Click"/>
+        <TextBlock x:Name="ConnectionStatus_textBlock" HorizontalAlignment="Left" Margin="327,14,0,0" TextWrapping="Wrap" Text="UART Connection is CLOSED" VerticalAlignment="Top"/>
+        <TextBox x:Name="serialTextBox" HorizontalAlignment="Left" Height="19" Margin="34,35,0,0" TextWrapping="Wrap" Text="COM1" VerticalAlignment="Top" Width="54" RenderTransformOrigin="0.515,1.531"/>
+        <TextBlock x:Name="serialPortTextBlock" HorizontalAlignment="Left" Margin="34,14,0,0" TextWrapping="Wrap" Text="Serial Port" VerticalAlignment="Top"/>
+        <TextBlock x:Name="baudRateTextBlock" HorizontalAlignment="Left" Margin="106,14,0,0" TextWrapping="Wrap" Text="Baud Rate" VerticalAlignment="Top" Width="70"/>
+        <TextBox x:Name="baudRateTextBox" HorizontalAlignment="Left" Height="19" Margin="106,35,0,0" TextWrapping="Wrap" Text="9600" VerticalAlignment="Top" Width="80" KeyDown="baudRateTextBox_KeyPress"/>
+        <TextBlock x:Name="dataTextBlock" HorizontalAlignment="Left" Margin="200,14,0,0" TextWrapping="Wrap" Text="Data Bits" VerticalAlignment="Top"/>
+        <TextBox x:Name="dataTextBox" HorizontalAlignment="Left" Height="19" Margin="200,35,0,0" TextWrapping="Wrap" Text="8" VerticalAlignment="Top" Width="47" RenderTransformOrigin="0.5,0.5" KeyDown="dataTextBox_KeyPress"/>
+        <TextBlock x:Name="stopBitsTextBlock" HorizontalAlignment="Left" Margin="265,14,0,0" TextWrapping="Wrap" Text="Stop Bits" VerticalAlignment="Top"/>
+        <TextBox x:Name="stopBitsTextBox" HorizontalAlignment="Left" Height="19" Margin="265,35,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="46" KeyDown="stopBitsTextBox_KeyPress"/>
         <TextBlock x:Name="incomingData_textBlock" HorizontalAlignment="Left" Margin="34,135,0,0" TextWrapping="Wrap" Text="Incoming Data" VerticalAlignment="Top"/>
-        <TextBox x:Name="incomingData_textBox" HorizontalAlignment="Left" Height="131" Margin="34,164,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="443" IsReadOnly="True"/>
+        <TextBox x:Name="incomingData_textBox" HorizontalAlignment="Left" Height="131" Margin="34,164,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="443" IsReadOnly="True" FontFamily="Courier New Bold"/>
+        <Rectangle x:Name="statusIndicator" Fill="#FF808080" HorizontalAlignment="Left" Height="16" Margin="117,135,0,0" Stroke="Black" VerticalAlignment="Top" Width="16"/>
+        <Button x:Name="clearConsole_Button" Content="Clear" HorizontalAlignment="Left" Margin="402,133,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="clearConsole_Button_Click"/>
+        <Button x:Name="toggleOutputDataFormat_Button" Content="Toggle Output Format" HorizontalAlignment="Left" Margin="187,133,0,0" VerticalAlignment="Top" Width="138" Click="toggleOutputDataFormat_Button_Click"/>
+        <TextBlock x:Name="outputFormat_textBlock" HorizontalAlignment="Left" Margin="34,114,0,0" TextWrapping="Wrap" Text="Output data will be displayed in ASCII" VerticalAlignment="Top"/>
+        <TextBlock x:Name="timer_textBlock" HorizontalAlignment="Left" Margin="34,295,0,0" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
