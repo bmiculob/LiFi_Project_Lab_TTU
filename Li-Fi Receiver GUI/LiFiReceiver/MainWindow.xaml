@@ -24,9 +24,6 @@
         <TextBox x:Name="incomingData_textBox" HorizontalAlignment="Left" Height="131" Margin="34,164,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="443" IsReadOnly="True" FontFamily="Courier New Bold"/>
         <Rectangle x:Name="statusIndicator" Fill="#FF808080" HorizontalAlignment="Left" Height="16" Margin="117,135,0,0" Stroke="Black" VerticalAlignment="Top" Width="16"/>
         <Button x:Name="clearConsole_Button" Content="Clear" HorizontalAlignment="Left" Margin="402,133,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="clearConsole_Button_Click"/>
-        <Button x:Name="toggleOutputDataFormat_Button" Content="Toggle Output Format" HorizontalAlignment="Left" Margin="187,133,0,0" VerticalAlignment="Top" Width="138" Click="toggleOutputDataFormat_Button_Click"/>
-        <TextBlock x:Name="outputFormat_textBlock" HorizontalAlignment="Left" Margin="34,114,0,0" TextWrapping="Wrap" Text="Output data will be displayed in ASCII" VerticalAlignment="Top"/>
-        <TextBlock x:Name="timer_textBlock" HorizontalAlignment="Left" Margin="34,295,0,0" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

@@ -30,12 +30,12 @@ namespace LiFiReceiver
         private FileStream fs;
         private System.Timers.Timer receiveTimer;
         private Boolean Status = false;
-        private byte formatType = 0;
+        //private byte formatType = 0;
 
         public MainWindow()
         {
             InitializeComponent();
-            receiveTimer = new System.Timers.Timer(1000);
+            receiveTimer = new System.Timers.Timer(333);
             receiveTimer.AutoReset = true;
             receiveTimer.Enabled = true;
             receiveTimer.Elapsed += OnTimedEvent;
@@ -135,23 +135,25 @@ namespace LiFiReceiver
             {
                 t = (byte)receiverIn.ReadByte();
                 fs.WriteByte(t); //Writes char to a file
-
+                if(bufferedOutput.Length < 500)
+                    bufferedOutput += (char)t;
+                /*
                 switch (formatType)
                 {
                     case 0:
                         bufferedOutput += (char)t;
                         break;
                     case 1:
-                        bufferedOutput += String.Format(" {0,-3} ", t.ToString());
+                        bufferedOutput += t;
                         break;
                     case 2:
-                        bufferedOutput += String.Format("0x{0,2} ", t.ToString("X2"));
+                        bufferedOutput += "0x" + t.ToString("X2") + " ";
                         break;
                     default:
                         bufferedOutput += (char)t;
                         break;
                 }
-
+                */
                 if (!Status)
                 {
                     Status = true;
@@ -173,7 +175,7 @@ namespace LiFiReceiver
                 this.Dispatcher.Invoke(() =>
                 {
                     statusIndicator.Fill = new SolidColorBrush(System.Windows.Media.Colors.Lime);
-                    incomingData_textBox.Text += bufferedOutput;
+                    incomingData_textBox.Text = bufferedOutput;
                 });
                 bufferedOutput = "";
                 Status = false;
@@ -192,6 +194,7 @@ namespace LiFiReceiver
             incomingData_textBox.Text = "";
         }
 
+        /*
         private void toggleOutputDataFormat_Button_Click(object sender, RoutedEventArgs e)
         {
             switch (formatType)
@@ -214,5 +217,6 @@ namespace LiFiReceiver
                     break;
             }
         }
+        */
     }
 }
