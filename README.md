@@ -1,2 +1,2 @@
 # LiFi_Project_Lab_TTU
-Li-Fi Prototyping GUI
+This a git repository containing source code as well as schematics for the Li-Fi project at Texas Tech.
