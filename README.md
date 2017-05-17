@@ -19,7 +19,10 @@ Sponsored by Dr. Zhaoyang Fan
 11.	Once both UI’s are configured click the transmit button on the transmitter side to transmit the file.
 12.	Once it is verified that the receiver is done transmitting close the UART connection and check if the file transmitted successfully.
 # Schematics
+## Transmitter
 ![alt text][Transmitter]
+## Receiver
+![alt text][Receiver]
 
 [Transmitter]: https://github.com/soukoba/LiFi_Project_Lab_TTU/blob/master/TransmitterSchematic.PNG
 [Receiver]: https://github.com/soukoba/LiFi_Project_Lab_TTU/blob/master/ReceiverSchematic.PNG
