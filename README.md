@@ -19,6 +19,7 @@ Sponsored by Dr. Zhaoyang Fan
 11.	Once both UI’s are configured click the transmit button on the transmitter side to transmit the file.
 12.	Once it is verified that the receiver is done transmitting close the UART connection and check if the file transmitted successfully.
 # Schematics
+The jumpers are referenced from the chip side of the tiva microcontroller.
 ## Transmitter
 ![alt text][Transmitter]
 ## Receiver
