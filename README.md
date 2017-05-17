@@ -1,5 +1,6 @@
 # LiFi_Project_Lab_TTU
 This a git repository containing source code as well as schematics for the Li-Fi project at Texas Tech.
+
 Sponsored by Dr. Zhaoyang Fan
 # System Operating Instructions.
 1.	Adjust the transmitter and the receiver with the lens so that the light is focused on the photodiode on the receiver side.
