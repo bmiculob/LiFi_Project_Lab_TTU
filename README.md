@@ -1,5 +1,6 @@
 # LiFi_Project_Lab_TTU
 This a git repository containing source code as well as schematics for the Li-Fi project at Texas Tech.
+Sponsored by Dr. Zhaoyang Fan
 # System Operating Instructions.
 1.	Adjust the transmitter and the receiver with the lens so that the light is focused on the photodiode on the receiver side.
 	*	Transmitter LED is powered with 12 V
@@ -17,3 +18,8 @@ This a git repository containing source code as well as schematics for the Li-Fi
 	*	Every time the path is changed the UART connection must toggle from closed state to open state.
 11.	Once both UI’s are configured click the transmit button on the transmitter side to transmit the file.
 12.	Once it is verified that the receiver is done transmitting close the UART connection and check if the file transmitted successfully.
+# Schematics
+![alt text][Transmitter]
+
+[Transmitter]: https://github.com/soukoba/LiFi_Project_Lab_TTU/blob/master/TransmitterSchematic.PNG
+[Receiver]: https://github.com/soukoba/LiFi_Project_Lab_TTU/blob/master/ReceiverSchematic.PNG
