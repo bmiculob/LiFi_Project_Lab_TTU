@@ -5,7 +5,7 @@ This a git repository containing source code as well as schematics for the Li-Fi
 	*	Transmitter LED is powered with 12 V
 	*	Turn the transmitter microcontroller off so that the LED remains on when powered with 12 V
 2.	Keep only one microcontroller plugged into the laptop whether it be the transmitter or receiver.
-3.	Type mode to determine which COM port it is and write it down or memorize it.
+3.	Got the the command prompt and type the command "mode" to determine which COM port it is and write it down or memorize it.
 4.	Do the same for the other microcontroller.
 5.	Open both the transmitter and receiver UI.
 6.	Configure the transmitter values so that the Serial Port and Baudrate (200000) are set. All other values should remain default.
